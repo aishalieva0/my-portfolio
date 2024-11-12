@@ -1,3 +1,12 @@
-c {
-    color: #ff5cc1;
-}
+// Base
+@import "base";
+
+// Variables
+@import "variables";
+
+// Components
+@import "./components/header";
+@import "./components/footer";
+
+// Sections
+@import "sections/hero";

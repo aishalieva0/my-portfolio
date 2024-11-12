@@ -1,0 +1,49 @@
+.hero {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/header.jpg);
+  background-position: center center;
+  background-size: cover;
+  .overlay {
+    height: 100%;
+    background: linear-gradient(
+      to top,
+      #fff 0,
+      rgba(99, 36, 125, 0.35) 99%,
+      rgba(92, 44, 107, 0.5) 100%
+    );
+  }
+
+  .heroContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #444;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .heroDetails {
+      h3 {
+        font-size: 25px;
+        letter-spacing: 2px;
+      }
+
+      h1 {
+        font-size: 60px;
+        letter-spacing: 1px;
+      }
+
+      span {
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-family: "Courier New", Courier, monospace;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

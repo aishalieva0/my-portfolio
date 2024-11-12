@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: DancingScript;
+  src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins-Regular";
+}
+
+.container {
+  width: 86%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
