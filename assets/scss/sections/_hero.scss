@@ -47,3 +47,43 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .hero {
+    .heroContent {
+      .heroDetails {
+        h3 {
+          font-size: 15px !important;
+        }
+
+        h1 {
+          font-size: 38px !important;
+        }
+
+        span {
+          font-size: 20px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .hero {
+    .heroContent {
+      .heroDetails {
+        h3 {
+          font-size: 14px !important;
+        }
+
+        h1 {
+          font-size: 26px !important;
+        }
+
+        span {
+          font-size: 18px !important;
+        }
+      }
+    }
+  }
+}
