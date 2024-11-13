@@ -1,4 +1,10 @@
 .footer {
+  background-color: green;
+  width: 100%;
+  // position: absolute;
+  // bottom: 0;
+  // left: 0;
+
   .social {
     width: 100%;
     display: flex;
@@ -31,9 +37,6 @@
   }
 
   .footerBottom {
-    // width: 100%;
-    // display: flex;
-    // justify-content: center;
     text-align: center;
     padding: 20px 0;
     p {
