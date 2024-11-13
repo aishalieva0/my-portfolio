@@ -1,16 +1,16 @@
 .footer {
-  // background-color: green;
   width: 100%;
-  // position: absolute;
-  // bottom: 0;
-  // left: 0;
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
 
   .social {
     width: 100%;
     display: flex;
     justify-content: center;
+
     border-bottom: 1px solid #ddd;
-    padding: 30px 0;
+    align-items: center;
+    height: 130px;
     .socialList {
       display: flex;
       gap: 20px;
@@ -38,7 +38,10 @@
 
   .footerBottom {
     text-align: center;
-    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
     p {
       text-transform: capitalize;
       span {

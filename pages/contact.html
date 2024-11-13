@@ -63,17 +63,10 @@
     <main class="main">
 
         <!-- Hero start -->
-        <section class="hero">
+        <section class="heroContact">
             <div class="heroImg">
                 <img src="../assets/img/header.jpg" alt="hero">
                 <div class="overlay"></div>
-            </div>
-            <div class="heroContent">
-                <div class="heroDetails">
-                    <h3>Hi!</h3>
-                    <h1>I am Aisha Alieva</h1>
-                    <span>Web Developer</span>
-                </div>
             </div>
         </section>
         <!-- Hero end -->
@@ -82,25 +75,30 @@
         <section class="contact">
             <div class="container">
                 <div class="row">
-                    <div class="title"></div>
+                    <div class="title">
+                        <h2 class="textBg">Contact</h2>
+                        <h2 class="textMain">Contact me</h2>
+                    </div>
                     <div class="content">
-                        <div class="title">
-                            <h2 class="textBg">Contact</h2>
-                            <h2>Contact me</h2>
-                        </div>
                         <form class="formContact">
-                            <input type="text" name="name" id="name" required>
-                            <input type="text" name="surname" id="surname">
-                            <input type="email" name="email" id="email" required>
-                            <input type="phone" name="phone" id="phone">
-                            <select name="service" id="service" required>
-                                <option value="">Choose a service</option>
-                                <option value="service1">Service 1</option>
-                                <option value="service2">Service 2</option>
-                                <option value="service3">Service 3</option>
-                            </select>
-                            <textarea name="note" id="note"></textarea>
-                            <button>Send</button>
+                            <div class="inputGroup">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                                <input type="text" name="surname" id="surname" placeholder="Your surname">
+                            </div>
+                            <div class="inputGroup">
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                                <input type="number" name="phone" id="phone" placeholder="Your phone">
+                            </div>
+                            <div class="inputGroup">
+                                <select name="service" id="service" required>
+                                    <option value="">Choose a service</option>
+                                    <option value="service1">Service 1</option>
+                                    <option value="service2">Service 2</option>
+                                    <option value="service3">Service 3</option>
+                                </select>
+                                <textarea name="note" id="note" placeholder="Your message"></textarea>
+                            </div>
+                            <button class="primaryBtn">Send</button>
                         </form>
                     </div>
                 </div>

@@ -126,6 +126,7 @@
   width: 130px;
   height: 45px;
   background-color: #6846a1;
+  color: #fff;
   text-transform: capitalize;
   display: flex;
   align-items: center;
@@ -133,6 +134,8 @@
   border-radius: 30px;
   font-size: 15px;
   letter-spacing: 0;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 .header .row .navBar .navList .navItem .contactBtn:hover {
   background-color: #b070d3;
@@ -221,13 +224,16 @@
 }
 .footer {
   width: 100%;
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
 }
 .footer .social {
   width: 100%;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #ddd;
-  padding: 30px 0;
+  align-items: center;
+  height: 130px;
 }
 .footer .social .socialList {
   display: flex;
@@ -253,7 +259,10 @@
 }
 .footer .footerBottom {
   text-align: center;
-  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
 }
 .footer .footerBottom p {
   text-transform: capitalize;
@@ -262,6 +271,143 @@
   color: #6846a1;
   cursor: pointer;
   font-weight: 600;
+}
+
+.heroContact {
+  height: 230px;
+  width: 100%;
+}
+.heroContact .heroImg {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  height: 660px;
+}
+.heroContact .heroImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.heroContact .heroImg .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #fff 0, rgba(99, 36, 125, 0.35) 99%, rgba(92, 44, 107, 0.5) 100%);
+}
+
+.contact .row {
+  flex-direction: column;
+  align-items: center;
+}
+.contact .row .title {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  position: relative;
+}
+.contact .row .title .textBg {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 160px;
+  color: rgba(176, 112, 211, 0);
+  font-weight: 900;
+  -webkit-text-stroke: 1px #b070d3;
+}
+.contact .row .title .textMain {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6846a1;
+  font-size: 50px;
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.contact .row .content {
+  margin: 50px 0;
+  width: 70%;
+}
+.contact .row .content .formContact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .row .content .formContact .inputGroup {
+  display: flex;
+  justify-content: space-between;
+}
+.contact .row .content .formContact .inputGroup input {
+  width: 48%;
+  height: 45px;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid #dee2e6;
+  padding: 0 20px;
+  transition: 0.3s ease;
+}
+.contact .row .content .formContact .inputGroup input:focus {
+  box-shadow: 0px 0px 6px 0px #b070d3;
+}
+.contact .row .content .formContact .inputGroup input::-webkit-outer-spin-button,
+.contact .row .content .formContact .inputGroup input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.contact .row .content .formContact .inputGroup select {
+  width: 48%;
+  border: 1px solid #dee2e6;
+  padding: 10px 13px;
+  border-radius: 20px;
+  color: #444;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.contact .row .content .formContact .inputGroup select:focus {
+  box-shadow: 0px 0px 6px 0px #b070d3;
+}
+.contact .row .content .formContact .inputGroup textarea {
+  width: 48%;
+  border-radius: 20px;
+  height: 60px;
+  padding: 10px 13px;
+  resize: none;
+  outline: none;
+  border: 1px solid #dee2e6;
+  transition: 0.3s ease;
+}
+.contact .row .content .formContact .inputGroup textarea:focus {
+  box-shadow: 0px 0px 6px 0px #b070d3;
+}
+.contact .row .content .formContact .primaryBtn {
+  width: 130px;
+  height: 45px;
+  background-color: #6846a1;
+  color: #fff;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  font-size: 15px;
+  letter-spacing: 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 900;
+  align-self: flex-end;
+}
+.contact .row .content .formContact .primaryBtn:hover {
+  background-color: #b070d3;
 }
 
 .hero {
