@@ -135,3 +135,83 @@
     }
   }
 }
+
+@media (max-width: 950px) {
+  .contact {
+    .row {
+      .title {
+        .textBg {
+          font-size: 120px;
+        }
+        .textMain {
+          font-size: 40px;
+        }
+      }
+
+      .content {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .contact {
+    .row {
+      .title {
+        .textBg {
+          font-size: 90px;
+        }
+        .textMain {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .contact {
+    .row {
+      .title {
+        .textBg {
+          font-size: 60px;
+        }
+        .textMain {
+          font-size: 25px;
+        }
+      }
+
+      .content {
+        .formContact {
+          gap: 10px;
+          .inputGroup {
+            flex-direction: column;
+            gap: 10px;
+
+            input,
+            select,
+            textarea {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .contact {
+    .row {
+      .title {
+        .textBg {
+          font-size: 40px;
+        }
+        .textMain {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

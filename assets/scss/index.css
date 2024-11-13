@@ -225,7 +225,6 @@
 .footer {
   width: 100%;
   margin-top: 50px;
-  border-top: 1px solid #ddd;
 }
 .footer .social {
   width: 100%;
@@ -410,6 +409,53 @@
   background-color: #b070d3;
 }
 
+@media (max-width: 950px) {
+  .contact .row .title .textBg {
+    font-size: 120px;
+  }
+  .contact .row .title .textMain {
+    font-size: 40px;
+  }
+  .contact .row .content {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .contact .row .title .textBg {
+    font-size: 90px;
+  }
+  .contact .row .title .textMain {
+    font-size: 35px;
+  }
+}
+@media (max-width: 490px) {
+  .contact .row .title .textBg {
+    font-size: 60px;
+  }
+  .contact .row .title .textMain {
+    font-size: 25px;
+  }
+  .contact .row .content .formContact {
+    gap: 10px;
+  }
+  .contact .row .content .formContact .inputGroup {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact .row .content .formContact .inputGroup input,
+  .contact .row .content .formContact .inputGroup select,
+  .contact .row .content .formContact .inputGroup textarea {
+    width: 100%;
+  }
+}
+@media (max-width: 490px) {
+  .contact .row .title .textBg {
+    font-size: 40px;
+  }
+  .contact .row .title .textMain {
+    font-size: 16px;
+  }
+}
 .hero {
   height: 100%;
   width: 100%;
