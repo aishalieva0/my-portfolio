@@ -140,11 +140,23 @@
     }
   }
   .navBar {
+    .menu-button {
+      &::before,
+      &::after {
+        background-color: $primary-color !important;
+      }
+    }
     .navList {
       .navItem {
         &:not(:last-child) {
           a {
             color: #444 !important;
+          }
+
+          &:hover {
+            a {
+              color: $primary-color !important;
+            }
           }
         }
       }

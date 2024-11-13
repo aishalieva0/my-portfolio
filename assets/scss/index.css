@@ -13,6 +13,7 @@
   list-style: none;
   box-sizing: border-box;
   font-family: "Poppins-Regular";
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -158,8 +159,14 @@
 .headerBar .logo a {
   color: #6846a1 !important;
 }
+.headerBar .navBar .menu-button::before, .headerBar .navBar .menu-button::after {
+  background-color: #6846a1 !important;
+}
 .headerBar .navBar .navList .navItem:not(:last-child) a {
   color: #444 !important;
+}
+.headerBar .navBar .navList .navItem:not(:last-child):hover a {
+  color: #6846a1 !important;
 }
 
 @media (max-width: 1124px) {
