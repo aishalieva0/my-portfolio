@@ -21,6 +21,8 @@
 @mixin sectionTitle {
   text-transform: uppercase;
   position: relative;
+  margin-bottom: 40px;
+
   .textBg {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 160px;
