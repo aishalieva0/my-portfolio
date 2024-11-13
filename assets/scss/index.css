@@ -272,6 +272,11 @@
   font-weight: 600;
 }
 
+@media (max-width: 320px) {
+  .footer .social .socialList {
+    gap: 10px;
+  }
+}
 .heroContact {
   height: 230px;
   width: 100%;
