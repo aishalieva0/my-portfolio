@@ -3,6 +3,7 @@
 .heroContact {
   height: 230px;
   width: 100%;
+
   .heroImg {
     position: relative;
     width: 100%;
@@ -39,6 +40,7 @@
       margin-bottom: 40px;
       text-transform: uppercase;
       position: relative;
+      z-index: -1;
       .textBg {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 160px;

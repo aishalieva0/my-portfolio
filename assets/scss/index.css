@@ -177,6 +177,9 @@
   .header .row .logo a {
     font-size: 30px;
   }
+  .header .row .navBar {
+    z-index: 99;
+  }
   .header .row .navBar .menu-button-container {
     display: flex;
   }
@@ -199,7 +202,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 110px;
+    margin-top: 100px;
     flex-direction: column;
     width: 100%;
     overflow: hidden;
@@ -310,6 +313,7 @@
   margin-bottom: 40px;
   text-transform: uppercase;
   position: relative;
+  z-index: -1;
 }
 .contact .row .title .textBg {
   font-family: Arial, Helvetica, sans-serif;
@@ -489,6 +493,7 @@
   position: absolute;
   top: 200px;
   left: 0;
+  z-index: -1;
   color: #444;
   height: 200px;
   width: 100%;
