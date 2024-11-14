@@ -25,6 +25,7 @@ const swiper = new Swiper('.portfolioSlider', {
     },
 
     breakpoints: {
+        // when window width is >= 320px
         280: {
             slidesPerView: 1,
             spaceBetween: 5,

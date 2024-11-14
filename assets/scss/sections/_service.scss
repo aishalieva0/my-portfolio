@@ -1,0 +1,195 @@
+@import "../mixins";
+.service {
+  .row {
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      @include sectionTitle;
+    }
+
+    .content {
+      .cards {
+        gap: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .singleCard {
+          border: 1px solid $primary-color;
+          border-bottom: 5px solid $primary-color;
+          background-color: #b070d310;
+          width: 270px;
+          height: 300px;
+          text-align: center;
+          padding: 15px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          cursor: pointer;
+          transition: 0.3s ease;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          margin-bottom: 30px;
+          border-radius: 10px;
+          i {
+            position: absolute;
+            top: -31px;
+            font-size: 25px;
+            background-color: $primary-color;
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            transition: 0.3s ease;
+          }
+          h3 {
+            margin: 30px 0 20px;
+          }
+          p {
+            color: $dark-text-color;
+          }
+
+          &:hover {
+            border-color: $btn-hover-color;
+            transform: scale(1.1);
+
+            i {
+              background-color: $btn-hover-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .service {
+    .row {
+      .title {
+        .textBg {
+          font-size: 120px;
+        }
+        .textMain {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .service {
+    .row {
+      .title {
+        .textBg {
+          font-size: 90px;
+        }
+        .textMain {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 535px) {
+  .service {
+    .row {
+      .title {
+        .textBg {
+          font-size: 60px;
+        }
+        .textMain {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .service {
+    .row {
+      .title {
+        .textBg {
+          font-size: 45px;
+        }
+        .textMain {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .service {
+    .row {
+      .title {
+        .textBg {
+          font-size: 120px;
+        }
+        .textMain {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .service {
+    .row {
+      .title {
+        .textBg {
+          font-size: 90px;
+        }
+        .textMain {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 535px) {
+  .service {
+    .row {
+      .title {
+        .textBg {
+          font-size: 60px;
+        }
+        .textMain {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .service {
+    .row {
+      .title {
+        .textBg {
+          font-size: 45px;
+        }
+        .textMain {
+          font-size: 16px;
+        }
+      }
+      .content {
+        .cards {
+          .singleCard {
+            width: 220px;
+          }
+        }
+      }
+    }
+  }
+}
