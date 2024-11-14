@@ -6,3 +6,22 @@ window.addEventListener('scroll', function () {
         header.classList.remove('headerBar');
     }
 });
+
+const swiper = new Swiper('.portfolioSlider', {
+    autoplay: {
+        pauseOnMouseEnter: true,
+    },
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 20,
+    grid: {
+        fill: 'row',
+        rows: 2,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
+});
+

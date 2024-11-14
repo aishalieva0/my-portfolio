@@ -1,0 +1,99 @@
+@import "../mixins";
+.portfolio {
+  .row {
+    flex-direction: column;
+    .title {
+      text-align: center;
+      @include sectionTitle;
+    }
+
+    .content {
+      .portfolioSlider {
+        .singleSlider {
+          position: relative;
+          cursor: pointer;
+          transition: 0.3s ease;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          .cover {
+            width: 100%;
+            height: 98%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .text {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 15px;
+              position: absolute;
+              transition: 0.3s ease;
+              opacity: 0;
+              h3 {
+                color: $white;
+              }
+              a {
+                border: 1px solid $white;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.3s ease;
+                cursor: pointer;
+                i {
+                  color: $white;
+                }
+
+                &:hover {
+                  background-color: $white;
+                  i {
+                    color: #b070d380;
+                  }
+                }
+              }
+            }
+
+            .overlay {
+              background-color: #b070d380;
+              width: 100%;
+              height: 0;
+              transition: 0.9s ease;
+            }
+            .overlayTwo {
+              background-color: #b070d380;
+              width: 100%;
+              height: 0;
+              transition: 0.9s ease;
+            }
+          }
+
+          &:hover {
+            .text {
+              opacity: 1;
+            }
+            .overlay {
+              height: 50%;
+            }
+
+            .overlayTwo {
+              height: 50%;
+            }
+          }
+        }
+
+        .swiper-pagination {
+          --swiper-pagination-bullet-size: 12px;
+        }
+      }
+    }
+  }
+}
