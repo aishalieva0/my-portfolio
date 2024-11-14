@@ -1,0 +1,126 @@
+@import "../mixins";
+.skills {
+  .row {
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      @include sectionTitle;
+    }
+
+    .content {
+      .desc {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        p {
+          width: 80%;
+          margin-bottom: 30px;
+          color: $dark-text-color;
+        }
+      }
+
+      .cards {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        .singleCard {
+          transform-style: preserve-3d;
+          width: 150px;
+          height: 150px;
+          transition: transform 0.3s ease;
+          position: relative;
+          .front {
+            @include skillCard;
+            background-color: $primary-color;
+
+            i {
+              font-size: 50px;
+              color: $white;
+            }
+          }
+
+          .back {
+            @include skillCard;
+            background-color: $btn-hover-color;
+            transform: rotateY(180deg);
+
+            h3 {
+              text-transform: uppercase;
+              font-size: 20px;
+              color: $white;
+              letter-spacing: 1px;
+              text-align: center;
+              padding: 5px;
+            }
+          }
+
+          &:hover {
+            transform: rotateY(180deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .skills {
+    .row {
+      .title {
+        .textBg {
+          font-size: 120px;
+        }
+        .textMain {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .skills {
+    .row {
+      .title {
+        .textBg {
+          font-size: 90px;
+        }
+        .textMain {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 535px) {
+  .skills {
+    .row {
+      .title {
+        .textBg {
+          font-size: 60px;
+        }
+        .textMain {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .skills {
+    .row {
+      .title {
+        .textBg {
+          font-size: 45px;
+        }
+        .textMain {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

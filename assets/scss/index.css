@@ -814,4 +814,132 @@
   .portfolio .row .title .textMain {
     font-size: 16px;
   }
+}
+.skills .row {
+  flex-direction: column;
+  align-items: center;
+}
+.skills .row .title {
+  text-transform: uppercase;
+  position: relative;
+  margin: 40px 0;
+}
+.skills .row .title .textBg {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 160px;
+  color: #fff;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #dee2e6;
+}
+.skills .row .title .textMain {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6846a1;
+  font-size: 50px;
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.skills .row .content .desc {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.skills .row .content .desc p {
+  width: 80%;
+  margin-bottom: 30px;
+  color: #444;
+}
+.skills .row .content .cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills .row .content .cards .singleCard {
+  transform-style: preserve-3d;
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+.skills .row .content .cards .singleCard .front {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background-color: #6846a1;
+}
+.skills .row .content .cards .singleCard .front i {
+  font-size: 50px;
+  color: #fff;
+}
+.skills .row .content .cards .singleCard .back {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background-color: #b070d3;
+  transform: rotateY(180deg);
+}
+.skills .row .content .cards .singleCard .back h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 5px;
+}
+.skills .row .content .cards .singleCard:hover {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 850px) {
+  .skills .row .title .textBg {
+    font-size: 120px;
+  }
+  .skills .row .title .textMain {
+    font-size: 40px;
+  }
+}
+@media (max-width: 720px) {
+  .skills .row .title .textBg {
+    font-size: 90px;
+  }
+  .skills .row .title .textMain {
+    font-size: 35px;
+  }
+}
+@media (max-width: 535px) {
+  .skills .row .title .textBg {
+    font-size: 60px;
+  }
+  .skills .row .title .textMain {
+    font-size: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .skills .row .title .textBg {
+    font-size: 45px;
+  }
+  .skills .row .title .textMain {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=index.css.map */
