@@ -23,5 +23,24 @@ const swiper = new Swiper('.portfolioSlider', {
         clickable: true,
         dynamicBullets: true,
     },
+
+    breakpoints: {
+        280: {
+            slidesPerView: 1,
+            spaceBetween: 5,
+            grid: {
+                fill: 'row',
+                rows: 1,
+            },
+        },
+        500: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        700: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+    }
 });
 
