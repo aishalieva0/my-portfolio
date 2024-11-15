@@ -6,6 +6,7 @@
 
     .title {
       @include sectionTitle;
+      margin-top: 0;
     }
 
     .content {

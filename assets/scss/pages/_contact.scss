@@ -106,6 +106,7 @@
             &:focus {
               box-shadow: 0px 0px 6px 0px $btn-hover-color;
             }
+       
           }
 
           textarea {
@@ -120,6 +121,10 @@
 
             &:focus {
               box-shadow: 0px 0px 6px 0px $btn-hover-color;
+            }
+
+            &::placeholder {
+              line-height: 36px;
             }
           }
         }

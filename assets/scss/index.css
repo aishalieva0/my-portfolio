@@ -406,6 +406,12 @@
 .contact .row .content .formContact .inputGroup textarea:focus {
   box-shadow: 0px 0px 6px 0px #b070d3;
 }
+.contact .row .content .formContact .inputGroup textarea::-moz-placeholder {
+  line-height: 36px;
+}
+.contact .row .content .formContact .inputGroup textarea::placeholder {
+  line-height: 36px;
+}
 .contact .row .content .formContact .primaryBtn {
   width: 130px;
   height: 45px;
@@ -557,6 +563,7 @@
   text-transform: uppercase;
   position: relative;
   margin: 40px 0;
+  margin-top: 0;
 }
 .about .row .title .textBg {
   font-family: Arial, Helvetica, sans-serif;
@@ -887,7 +894,7 @@
   background-color: #6846a1;
 }
 .skills .row .content .cards .singleCard .front i {
-  font-size: 50px;
+  font-size: 60px;
   color: #fff;
 }
 .skills .row .content .cards .singleCard .back {
@@ -923,6 +930,10 @@
   .skills .row .title .textMain {
     font-size: 40px;
   }
+  .skills .row .content .cards .singleCard {
+    width: 130px;
+    height: 130px;
+  }
 }
 @media (max-width: 720px) {
   .skills .row .title .textBg {
@@ -930,6 +941,16 @@
   }
   .skills .row .title .textMain {
     font-size: 35px;
+  }
+  .skills .row .content .cards .singleCard {
+    width: 100px;
+    height: 100px;
+  }
+  .skills .row .content .cards .singleCard .front i {
+    font-size: 40px;
+  }
+  .skills .row .content .cards .singleCard .back h3 {
+    font-size: 14px;
   }
 }
 @media (max-width: 535px) {
@@ -939,6 +960,19 @@
   .skills .row .title .textMain {
     font-size: 20px;
   }
+  .skills .row .content .cards {
+    gap: 15px;
+  }
+  .skills .row .content .cards .singleCard {
+    width: 80px;
+    height: 80px;
+  }
+  .skills .row .content .cards .singleCard .front i {
+    font-size: 30px;
+  }
+  .skills .row .content .cards .singleCard .back h3 {
+    font-size: 13px;
+  }
 }
 @media (max-width: 360px) {
   .skills .row .title .textBg {
@@ -946,6 +980,10 @@
   }
   .skills .row .title .textMain {
     font-size: 16px;
+  }
+  .skills .row .content .cards .singleCard {
+    width: 70px;
+    height: 70px;
   }
 }
 .service .row {
