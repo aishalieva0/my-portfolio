@@ -1,15 +1,16 @@
 .footer {
   width: 100%;
   margin-top: 50px;
-
+  background-color: #b070d310;
   .social {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 40px 0;
 
     border-bottom: 1px solid #ddd;
     align-items: center;
-    height: 130px;
+    height: 170px;
     .socialList {
       display: flex;
       gap: 20px;
@@ -40,13 +41,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
+    height: 80px;
+
     p {
       text-transform: capitalize;
       span {
         color: $primary-color;
         cursor: pointer;
         font-weight: 600;
+        transition: 0.3s ease;
+        &:hover {
+          color: $btn-hover-color;
+        }
       }
     }
   }

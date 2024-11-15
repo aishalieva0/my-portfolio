@@ -157,7 +157,7 @@
   width: 100%;
   height: 90px;
   transition: 0.3s ease;
-  border-bottom: 1px solid rgba(222, 226, 230, 0.34);
+  border-bottom: 1px solid rgba(222, 226, 230, 0.5);
   display: flex;
   align-items: center;
 }
@@ -240,14 +240,16 @@
 .footer {
   width: 100%;
   margin-top: 50px;
+  background-color: rgba(176, 112, 211, 0.062745098);
 }
 .footer .social {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 40px 0;
   border-bottom: 1px solid #ddd;
   align-items: center;
-  height: 130px;
+  height: 170px;
 }
 .footer .social .socialList {
   display: flex;
@@ -276,7 +278,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
+  height: 80px;
 }
 .footer .footerBottom p {
   text-transform: capitalize;
@@ -285,6 +287,10 @@
   color: #6846a1;
   cursor: pointer;
   font-weight: 600;
+  transition: 0.3s ease;
+}
+.footer .footerBottom p span:hover {
+  color: #b070d3;
 }
 
 @media (max-width: 320px) {
