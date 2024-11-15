@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Custom Styling -->
     <link rel="stylesheet" href="./assets/scss/index.css">
     <title>Aisha Alieva</title>
@@ -71,17 +75,17 @@
                 <div class="overlay"></div>
             </div>
             <div class="heroContent">
-                <div class="heroDetails">
+                <div class="heroDetails animate__animated animate__rollIn animate__slow">
                     <h3>Hi!</h3>
                     <h1>I am Aisha Alieva</h1>
-                    <span>Full Stack Web Developer</span>
+                    <span>Web Developer</span>
                 </div>
             </div>
         </section>
         <!-- Hero end -->
 
         <!-- About start -->
-        <section class="about" id="about">
+        <section class="about" id="about" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <div class="container">
                 <div class="row">
                     <div class="title">
@@ -111,7 +115,7 @@
         <!-- About end -->
 
         <!-- Portfolio start -->
-        <section class="portfolio" id="portfolio">
+        <section class="portfolio" id="portfolio" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <div class="container">
                 <div class="row">
                     <div class="title">
@@ -304,7 +308,7 @@
         <!-- Portfolio end -->
 
         <!-- Skill start -->
-        <section class="skills" id="skills">
+        <section class="skills" id="skills" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <div class="container">
                 <div class="row">
                     <div class="title">
@@ -537,8 +541,11 @@
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/5572bb5cab.js" crossorigin="anonymous"></script>
 
-    <!-- Swiper -->
+    <!-- Swiper Slider-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- JavaScript files -->
     <script src="./assets/js/main.js"></script>
